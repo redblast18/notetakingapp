@@ -78,14 +78,15 @@ public class ListNotesUIController extends BaseController implements Initializab
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        List<Note> notesFromDB = noteDAO.getAllNotes();
-        data.clear();
+    	List<Note> notesFromDB = noteDAO.getAllNotes();
         data.addAll(notesFromDB);
-        notesListTable.setItems(data);
+        
         FilteredList<Note> filteredData = new FilteredList<>(data, n -> true);
         notesListTable.setItems(filteredData);
+        
         titleTc.setCellValueFactory(new PropertyValueFactory<>("title"));
         descriptionTc.setCellValueFactory(new PropertyValueFactory<>("description"));
+        
         searchNotes.setOnKeyReleased(e -> {
             filteredData.setPredicate(n -> {
                 if (searchNotes.getText() == null || searchNotes.getText().isEmpty())
@@ -94,6 +95,7 @@ public class ListNotesUIController extends BaseController implements Initializab
                        n.getDescription().contains(searchNotes.getText());
             });
         });
+        
         updateNotesCount();
     }
 
