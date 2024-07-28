@@ -47,14 +47,14 @@
                </BorderPane.margin></TextField>
          </left>
          <right>
-            <Label fx:id="notesCount" alignment="CENTER" prefHeight="24.0" prefWidth="63.0" text="4 Notes" textAlignment="CENTER" BorderPane.alignment="CENTER">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-               <BorderPane.margin>
-                  <Insets right="10.0" />
-               </BorderPane.margin>
-            </Label>
+            <Label fx:id="notesCount" alignment="CENTER" prefHeight="24.0" prefWidth="63.0" text="0 Notes" textAlignment="CENTER" BorderPane.alignment="CENTER">
+			    <font>
+			        <Font name="System Bold" size="13.0" />
+			    </font>
+			    <BorderPane.margin>
+			        <Insets right="10.0" />
+			    </BorderPane.margin>
+			</Label>
          </right>
          <center>
             <Separator orientation="VERTICAL" BorderPane.alignment="CENTER" />

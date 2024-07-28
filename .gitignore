@@ -1,0 +1,23 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Eclipse
+*.pydevproject
+.project
+.metadata
+bin/
+tmp/
+
+# IntelliJ
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# Docker
+db_data/

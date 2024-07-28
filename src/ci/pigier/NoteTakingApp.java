@@ -1,11 +1,13 @@
 package ci.pigier;
 
+import ci.pigier.database.DatabaseConnection;
 import ci.pigier.ui.FXMLPage;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.sql.*;
 
 public class NoteTakingApp extends Application {
 
@@ -25,6 +27,15 @@ public class NoteTakingApp extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+    	try {
+            Connection conn = DatabaseConnection.getConnection();
+            if (conn != null) {
+                System.out.println("Database connected!");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    	
         launch(args);
     }
     

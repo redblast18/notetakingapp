@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Created-By: Maven Jar Plugin 3.2.0
+Build-Jdk-Spec: 21
+Class-Path: lib/javafx-controls-17.0.1.jar lib/javafx-controls-17.0.1-wi
+ n.jar lib/javafx-graphics-17.0.1.jar lib/javafx-graphics-17.0.1-win.jar
+  lib/javafx-base-17.0.1.jar lib/javafx-base-17.0.1-win.jar lib/javafx-f
+ xml-17.0.1.jar lib/javafx-fxml-17.0.1-win.jar lib/mysql-connector-java-
+ 8.0.26.jar lib/protobuf-java-3.11.4.jar
+Main-Class: ci.pigier.NoteTakingApp
+
